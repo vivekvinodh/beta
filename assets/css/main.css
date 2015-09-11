@@ -26,6 +26,12 @@
 		line-height: 1;
 	}
 
+	canvas {
+	  position:absolute;
+	  top:0; left:0;
+	  background-color:black;
+	}
+
 	ol, ul {
 		list-style: none;
 	}
