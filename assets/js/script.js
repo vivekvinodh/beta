@@ -1,6 +1,16 @@
-var w = c.width = window.innerWidth,
-h = c.height = window.innerHeight,
+var w, h,
 ctx = c.getContext('2d'),
+fitToContainer(canvas);
+
+function fitToContainer(canvas){
+  canvas.style.width='100%';
+  canvas.style.height='100%';
+  canvas.width  = canvas.offsetWidth;
+  canvas.height = canvas.offsetHeight;
+}
+
+w = canvas.width;
+h = canvas.height;
 
 spawnProb = 1,
 numberOfMoves = [8, 16], //[min, max]
