@@ -14,6 +14,32 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body id="top">
+		<SCRIPT>
+		function passWord() {
+		var testV = 1;
+		var pass1 = prompt('Please Enter Your Password',' ');
+		while (testV < 3) {
+		if (!pass1)
+		history.go(-1);
+		if (pass1.toLowerCase() == "letmein") {
+		alert('You Got it Right!');
+		window.open('index.html');
+		break;
+		}
+		testV+=1;
+		var pass1 =
+		prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+		}
+		if (pass1.toLowerCase()!="password" & testV ==3)
+		history.go(-1);
+		return " ";
+		}
+		</SCRIPT>
+		<CENTER>
+		<FORM>
+		<input type="button" value="Enter Protected Area" onClick="passWord()">
+		</FORM>
+		</CENTER>
 
 		<!-- Header -->
 			<header id="header">
@@ -84,7 +110,7 @@
 						  <li class="timeline-event">
 						    <label class="timeline-event-icon"></label>
 						    <div class="timeline-event-copy">
-						      <p class="timeline-event-thumbnail">April 2011 - heute</p>
+						      <p class="timeline-event-thumbnail">September 2015 - heute</p>
 						      <h3>Geil,Danke! GmbH</h3>
 						      <h4>Geschäftsführerin eines Web-Studios</h4>
 						      <p><strong>Schwerpunkt: Frontend-Entwicklung</strong><br>Entwickeln von anspruchsvollen, animierten, responsive und adaptive Webseiten mit HTML5, SCSS, jQuery; für alle Browser, optimiert für Desktop, Notebook, Smartphones und Tablets (iOS, Android, Windows).</p>
@@ -109,7 +135,7 @@
 						      <p><strong>Systemarchitektur, Consulting</strong><br>Konzeption und Modellierung von Systemen und APIs für Digital Publishing und Entitlement nach SOA</p>
 						    </div>
 						  </li>
-						</ul>  						
+						</ul>
 						<!--
 						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
 						<div class="row">
