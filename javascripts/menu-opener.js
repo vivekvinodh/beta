@@ -1,3 +1,6 @@
-$(".menu-opener").click(function(){
-  $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
+$(document).ready(function(){
+  $('.bars').click(function(){
+    $('#nav').toggleClass('open');
+    $('.container').toggleClass('menu-open');
+  });
 });
