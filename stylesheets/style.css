@@ -637,43 +637,6 @@ p {
   }
 }
 
-.letter:nth-child(17):before {
-  content: "1793625480";
-  margin-top: -192px;
-  -webkit-animation-name: letter17;
-          animation-name: letter17;
-  -webkit-animation-duration: 2.27556s;
-          animation-duration: 2.27556s;
-  -webkit-animation-timing-function: steps(9);
-          animation-timing-function: steps(9);
-  -webkit-animation-delay: 0.36s;
-          animation-delay: 0.36s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-.is-animated .letter:nth-child(17):before {
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-@-webkit-keyframes letter17 {
-  from {
-    margin-top: -120px;
-  }
-  to {
-    margin-top: 24px;
-  }
-}
-
-@keyframes letter17 {
-  from {
-    margin-top: -120px;
-  }
-  to {
-    margin-top: 24px;
-  }
-}
-
 .menu-opener, .menu-opener:hover, .menu-opener.active, .menu-opener-inner, .menu-opener-inner::before, .menu-opener-inner::after, .menu, .menu.active {
   -webkit-transition: 250ms all;
   transition: 250ms all;
