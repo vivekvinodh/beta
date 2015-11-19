@@ -28,6 +28,11 @@ body {
   height: auto;
 }
 
+.below-nav{
+    position: absolute;
+    clear: left;
+}
+
 .top {
     position: relative;
     width: 100%;
