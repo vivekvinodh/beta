@@ -30,6 +30,11 @@ body {
     text-align: center;
 }
 
+.img{
+    margin-left: auto;
+    margin-right: auto
+}
+
 .tophalfleft {
     padding-top: 25px;
     position: absolute;
