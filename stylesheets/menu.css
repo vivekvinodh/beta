@@ -69,7 +69,7 @@ body {
   left: -55px;
   top: 0;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.6);
+  background: transparent;
   padding: 15px 15px 10px;
 }
 .container #nav li.bars .bar1,
