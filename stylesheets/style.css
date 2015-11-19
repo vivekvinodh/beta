@@ -42,6 +42,7 @@ body {
 }
 
 .tophalfleft {
+    padding-top: 25px;
     position: absolute;
     width: 50%;
     height: 50%;
