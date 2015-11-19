@@ -34,7 +34,10 @@ body {
     position: absolute;
     bottom: 0;
     width: 150px;
-    margin: 0 auto;
+    right:25%;
+    left:50%;
+    margin-left:-75px;
+    padding-bottom: 20px;
 }
 
 p {
