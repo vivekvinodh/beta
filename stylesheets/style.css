@@ -36,7 +36,7 @@ body {
     height: 50%;
     bottom: 0;
     left: 0;
-    background:url(me.jpg);
+    background-image: url(me.jpg);
 }
 
 .tophalfright {
