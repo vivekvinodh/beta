@@ -14,13 +14,6 @@ body {
   left: 0;
   margin: auto;
 }
-a {
-  color: #5dc;
-  text-decoration: none;
-}
-a:hover {
-  color: #6ae1d2;
-}
 .container {
   margin: 0;
   padding: 0;
