@@ -30,6 +30,8 @@ body {
 
 .below-nav{
     clear: left;
+    width: auto;
+    height: auto;
 }
 
 .top {
