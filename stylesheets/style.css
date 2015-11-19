@@ -46,12 +46,20 @@ body {
     padding-bottom: 15px;
 }
 
-p {
+p{
   font-family: 'Muli', Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: #eee;
   opacity: 0.3;
+}
+
+h3{
+    font-family: 'Muli', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #eee;
+    opacity: 0.3;
 }
 
 .letter {
