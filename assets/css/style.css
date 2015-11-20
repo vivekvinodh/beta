@@ -36,6 +36,10 @@ body {
     height: auto;
 }
 
+a:hover {
+    color: #5cd;
+}
+
 .tophalfleft {
     padding-top: 25px;
     position: absolute;
