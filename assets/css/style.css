@@ -72,6 +72,14 @@ body {
     padding-bottom: 15px;
 }
 
+.info {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    right: 25%;
+    left: 50%;
+    margin-left: -50%;
+}
 p{
   font-family: 'Muli', Helvetica, Arial, sans-serif;
   font-size: 14px;
