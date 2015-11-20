@@ -66,15 +66,14 @@ body {
     position: absolute;
     bottom: 0;
     width: 150px;
-    right:25%;
-    left:50%;
-    margin-left:-75px;
-    padding-bottom: 15px;
+    right:0;
+    padding-bottom: 10px;
 }
 
 .info {
     position: absolute;
     bottom: 25%;
+    top: 55%;
     width: 100%;
     right: 25%;
     left: 50%;
