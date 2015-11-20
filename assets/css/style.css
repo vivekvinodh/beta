@@ -31,8 +31,9 @@ body {
 }
 
 .img{
-    margin-left: auto;
-    margin-right: auto
+    max-width: 100%;
+    display:block;
+    height: auto;
 }
 
 .tophalfleft {
