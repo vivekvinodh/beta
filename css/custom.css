@@ -195,7 +195,7 @@ p{
   .VAWrap{
       padding-top: 20px;
       padding-bottom: 20px;
-      min-height: 80vh;
+      min-height: 80vh !important;
   }
   /*
   .boxx {
