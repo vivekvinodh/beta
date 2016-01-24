@@ -18,7 +18,7 @@ p{
     position: relative;
     width: 100%;
     height: 100%;
-    overflow-y:hidden;
+    overflow-y:scroll;
     text-align: center;
 }
 
@@ -53,15 +53,20 @@ p{
 }
 
 .social-content{
-    position: absolute;
-    bottom: 0;
-    width: 150px;
-    right:25%;
-    left:50%;
-    margin-left:-75px;
+    position: relative;
+    width: 100%;
+    right:0;
+    left:0;
+    text-align: center;
+    padding-top: 15px;
     padding-bottom: 15px;
-}
+    background-color: #120525;
 
+}
+.social-container{
+    width: 150px;
+    margin: auto;
+}
 .centered {
   text-align: center;
   font-size: 1.5em;
@@ -76,13 +81,12 @@ p{
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100vh;
   position: relative;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  overflow-y: hidden;
+  overflow-y: visible;;
 }
 .containerr.menu-open {
   position: relative;
@@ -188,6 +192,10 @@ p{
   body {
     min-width: 320px;
   }
+  .VAWrap{
+      padding-top: 40px;
+      padding-bottom: 40px;
+  }
   /*
   .boxx {
     width: 90%;
@@ -212,15 +220,19 @@ p{
 }
 
 /*CHANGING LETTERS*/
+.VAWrap{
+    position: relative;
+    min-height: 88vh;
+    display: flex;
+    vertical-align: middle;
+}
 .wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 90%;
-  font-size: 0;
-  -webkit-transform: translate(-50%);
-      -ms-transform: translate(-50%);
-          transform: translate(-50%);
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 0;
 }
 
 .letter {
