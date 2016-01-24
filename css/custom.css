@@ -222,7 +222,7 @@ p{
 /*CHANGING LETTERS*/
 .VAWrap{
     position: relative;
-    min-height: 88vh;
+    min-height: 83vh;
     display: flex;
     vertical-align: middle;
 }
