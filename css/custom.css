@@ -105,20 +105,20 @@ span:hover:after {
         color: #FFF;
         padding-left: 12vw;
         padding-top: 8vh;
-        font-size: 3vw;
+        font-size: 4vw;
     }
     .quote {
         font-family: 'Fira Sans', sans-serif;
         color: #FFF;
         padding-left: 12vw;
-        font-size: 2.75vw;
+        font-size: 3.75vw;
         width: auto;
     }
     li {
         padding: 0 20px;
         font-family: 'Fira Mono', monospace;
         color: #FFF;
-        font-size: 2vw;
+        font-size: 3vw;
     }
     .container {
         padding-left: 9vw;
