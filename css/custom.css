@@ -5,9 +5,11 @@ body {
 .name {
     font-family: 'Fira Mono', monospace;
     color: #FFF
+    padding-left: 50px
 }
 
 .quote {
     font-family: 'Fira Sans', sans-serif;
     color: #FFF
+    padding-left: 50px
 }
