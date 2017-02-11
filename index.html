@@ -36,7 +36,7 @@
             </div>
             <div class="col-xs-6" id="menu-holder">
                 <div class="container">
-                    <ul>
+                    <ul id=nav>
                         <li><span>About</span></li>
                         <li><span>Hackathons</span></li>
                         <li><span>Blog</span></li>
@@ -44,18 +44,29 @@
                 </div>
             </div>
         </div>
-
-        <div id="menu-holder">
-        </div>
     </div>
 
 
 
 
-
-
-
-
+    
+    
+    
+    
+    
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript">
+	$("#nav").addClass("js").before('<div id="menu">&#9776;</div>');
+	$("#menu").click(function(){
+		$("#nav").toggle();
+	});
+	$(window).resize(function(){
+		if(window.innerWidth > 768) {
+			$("#nav").removeAttr("style");
+		}
+	});
+</script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Latest compiled and minified Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
