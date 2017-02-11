@@ -121,7 +121,6 @@ span:hover:after {
         font-size: 2vw;
     }
     .container {
-        display: table-cell;
-        vertical-align: middle;
+        padding-left: 9vw;
     }
 }
