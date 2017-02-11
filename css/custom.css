@@ -1,0 +1,13 @@
+body {
+    background-color: #120525;
+}
+
+.name {
+    font-family: 'Fira Mono', monospace;
+    color: #FFF
+}
+
+.quote {
+    font-family: 'Fira Sans', sans-serif;
+    color: #FFF
+}
