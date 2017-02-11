@@ -122,5 +122,6 @@ span:hover:after {
     }
     .container {
         padding-left: 9vw;
+        padding-top: 2vh;
     }
 }
