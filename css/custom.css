@@ -96,28 +96,32 @@ span:hover:after {
     transition: 0s;
 }
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) { 
-    .name {
-    font-family: 'Fira Mono', monospace;
-    color: #FFF;
-    padding-left: 12vw;
-    padding-top: 8vh;
-    font-size: 3vw;
-}
 
-.quote {
-    font-family: 'Fira Sans', sans-serif;
-    color: #FFF;
-    padding-left: 12vw;
-    font-size: 2.75vw;
-    width: auto;
-}
-    
-   li {
-    padding: 0 20px;
-    font-family: 'Fira Mono', monospace;
-    color: #FFF;
-    font-size: 2vw;
-}
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+    .name {
+        font-family: 'Fira Mono', monospace;
+        color: #FFF;
+        padding-left: 12vw;
+        padding-top: 8vh;
+        font-size: 3vw;
+    }
+    .quote {
+        font-family: 'Fira Sans', sans-serif;
+        color: #FFF;
+        padding-left: 12vw;
+        font-size: 2.75vw;
+        width: auto;
+    }
+    li {
+        padding: 0 20px;
+        font-family: 'Fira Mono', monospace;
+        color: #FFF;
+        font-size: 2vw;
+    }
+    .container {
+        display: table-cell;
+        vertical-align: middle;
+    }
 }
