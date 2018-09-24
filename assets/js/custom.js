@@ -24,23 +24,45 @@ var granimInstance = new Granim({
 
 $(document).ready(function() {
 
+  console.log("Webpage has loaded!");
+  var animationEnd = (function(el) {
+    var animations = {
+      animation: 'animationend',
+      OAnimation: 'oAnimationEnd',
+      MozAnimation: 'mozAnimationEnd',
+      WebkitAnimation: 'webkitAnimationEnd',
+    };
+
+    for (var t in animations) {
+      if (el.style[t] !== undefined) {
+        return animations[t];
+      }
+    }
+  })(document.createElement('div'));
+
+  $('#description').one(animationEnd, function() {
+    $('#description').removeClass("animated fadeIn delay-2");
+    $('#description').animate({
+      'opacity': 0.8
+    }, 300);
+    console.log("Desc Anim removed!");
+  });
+
   // jQuery methods go here...
   $('#who-am-I-cta').on('click', function(event) {
 
     $('#title').animate({
       color: "white",
       opacity: 0.9
-    }, 2000, function() {
-
-    });
+    }, 2000, function() {});
 
     $('#description').animate({
       'opacity': 0
-    }, 5000, function() {
-      $(this).text('world');
+    }, 1000, function() {
+      $(this).text('this is who I am.');
     }).animate({
       'opacity': 1
-    }, 5000);
+    }, 1000);
 
     $('#what-I-like-cta').removeClass("animated fadeInUp delay-5").addClass("animated fadeOut");
     $('#what-I-do-cta').removeClass("animated fadeInUp delay-4").addClass("animated fadeOut");
