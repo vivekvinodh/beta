@@ -43,7 +43,7 @@ $(document).ready(function() {
   $('#description').one(animationEnd, function() {
     $('#description').removeClass("animated fadeIn delay-2");
     $('#description').animate({
-      'opacity': 0.8
+      'opacity': 0.9
     }, 300);
     console.log("Desc Anim removed!");
   });
@@ -53,7 +53,7 @@ $(document).ready(function() {
 
     $('#title').animate({
       color: "white",
-      opacity: 0.9
+      opacity: 0.5
     }, 2000, function() {});
 
     $('#description').animate({
@@ -61,13 +61,8 @@ $(document).ready(function() {
     }, 1000, function() {
       $(this).text('who I am.');
     }).animate({
-      'opacity': 1
+      'opacity': 0.9
     }, 1000);
-
-    $('#what-I-like-cta').removeClass("animated fadeInUp delay-5").addClass("animated fadeOut");
-    $('#what-I-do-cta').removeClass("animated fadeInUp delay-4").addClass("animated fadeOut");
-    $('#portfolio-cta').removeClass("animated fadeInUp delay-6").addClass("animated fadeOut");
-    $('#contact-me-cta').removeClass("animated fadeInUp delay-7").addClass("animated fadeOut");
 
     granimInstance.changeState('midnight-state');
   });
