@@ -59,7 +59,7 @@ $(document).ready(function() {
     $('#description').animate({
       'opacity': 0
     }, 1000, function() {
-      $(this).text('this is who I am.');
+      $(this).text('who I am.');
     }).animate({
       'opacity': 1
     }, 1000);
