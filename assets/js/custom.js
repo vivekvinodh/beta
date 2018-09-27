@@ -22,33 +22,40 @@ var granimInstance = new Granim({
   }
 });
 
-$(document).ready(function() {
+var animationEnd = (function(el) {
+  var animations = {
+    animation: 'animationend',
+    OAnimation: 'oAnimationEnd',
+    MozAnimation: 'mozAnimationEnd',
+    WebkitAnimation: 'webkitAnimationEnd',
+  };
 
-  console.log("Webpage has loaded!");
-  var animationEnd = (function(el) {
-    var animations = {
-      animation: 'animationend',
-      OAnimation: 'oAnimationEnd',
-      MozAnimation: 'mozAnimationEnd',
-      WebkitAnimation: 'webkitAnimationEnd',
-    };
-
-    for (var t in animations) {
-      if (el.style[t] !== undefined) {
-        return animations[t];
-      }
+  for (var t in animations) {
+    if (el.style[t] !== undefined) {
+      return animations[t];
     }
-  })(document.createElement('div'));
+  }
+})(document.createElement('div'));
 
-  $('#description').one(animationEnd, function() {
-    $('#description').removeClass("animated fadeIn delay-2");
-    $('#description').animate({
-      'opacity': 0.9
-    }, 300);
-    console.log("Desc Anim removed!");
+$(document).ready(function() {
+  // jQuery methods go here...
+
+  $('#title').one(animationEnd, function(){
+    $('#title').removeClass("animated fadeInDown");
+    $('#title').delay(100);
+    $('#title').animate({
+      opacity: 0.8
+    }, 1750, function(){});
   });
 
-  // jQuery methods go here...
+  $('#description').one(animationEnd, function(){
+    $('#description').removeClass("animated fadeIn delay-2");
+    $('#description').delay(100);
+    $('#description').animate({
+      opacity: 0.8
+    }, 1500, function(){});
+  });
+
   $('#who-am-I-cta').on('click', function(event) {
 
     $('#title').animate({
