@@ -140,6 +140,11 @@ h4 {
 p:last-child {
   margin-bottom: 0;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
 /* LAYOUT/CONTENT */
 .content-wrap {
   width: 80%;
