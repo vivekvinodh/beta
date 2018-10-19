@@ -57,6 +57,71 @@ var granimInstance = new Granim({
 $(document).ready(function() {
   // jQuery methods go here...
 
+  $('#title-text').on('click', function(event){
+
+    granimInstance.changeState('default-state');
+
+    $('#title-text').animate({
+      color: "black",
+      opacity: 0.9
+    }, 1250, function() {});
+
+    $('#subtitle-text').animate({
+      color: "white",
+      opacity: 0.8
+    }, 1250, function() {});
+
+    $('#who-I-am-btn').animate({
+      color: "black",
+      opacity: 1
+    }, 1250, function() {});
+
+    $('#link-text').animate({
+      color: "black",
+      opacity: 1
+    }, 1250, function() {});
+
+    $('#what-I-do-btn').animate({
+      color: "black",
+      opacity: 1
+    }, 1250, function() {});
+
+    $('#what-I-like-btn').animate({
+      color: "black",
+      opacity: 1
+    }, 1250, function() {});
+
+    $('#portfolio-btn').animate({
+      color: "black",
+      opacity: 1
+    }, 1250, function() {});
+
+    $('#portfolio-text').animate({
+      color: "black",
+      opacity: 0.8
+    }, 1250, function() {});
+
+    $('#contactme-text').animate({
+      color: "black",
+      opacity: 1
+    }, 1250, function() {});
+
+    $('#email-text').animate({
+      color: "black",
+      opacity: 1
+    }, 1250, function() {});
+
+    $('#description-text').animate({
+      'opacity': 0
+    }, 600, function() {
+      $(this).text('Hi, I\'m Vivek Vinodh. I\'m an engineer by trade, but I\'m much more than that. Use the links to below to learn more.');
+    }).animate({
+      color: "black",
+      opacity: 1
+    }, 500);
+
+  });
+
   $('#who-I-am-btn').on('click', function(event) {
 
     granimInstance.changeState('who-I-am-state');
