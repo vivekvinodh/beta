@@ -3,94 +3,98 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="description" content="Vivek Vinodh" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Vivek Vinodh" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <title>Vivek Vinodh</title>
-  <meta name="description" content="My home on the web.">
-  <meta name="keywords" content="Vivek, Vinodh, software, hardware, engineer, wearables">
+    <title>Vivek Vinodh</title>
+    <meta name="description" content="My home on the web.">
+    <meta name="keywords" content="Vivek, Vinodh, software, hardware, engineer, wearables">
 
-  <!-- FAVICON -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-  <!-- ANIMATE.CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+    <!-- ANIMATE.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
 
-  <!-- FONTS -->
-  <link rel="stylesheet" type="text/css" href="assets/fonts/fonts.css" />
+    <!-- FONTS -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/fonts.css" />
 
-  <!-- STYLES -->
-  <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.min.css?version=1">
 
 
 </head>
 
 <body>
-  <div class="animated fadeIn">
-    <canvas id="canvas-basic"></canvas>
-  </div>
-  <!-- CONTENT-WRAP -->
-  <div class="content-wrap">
-    <!-- CONTENT -->
-    <div class="content">
-      <!-- TITLE -->
-      <div class="animated fadeInDown delay-2">
-        <h1 id="title-text">
-          <a href="#">Vivek Vinodh</a>
-        </h1>
-      </div>
-      <!-- SUBTITLE -->
-      <div class="animated fadeIn delay-4">
-        <h2 id="subtitle-text">
-          currently: exploring new opportunities.
-        </h2>
-      </div>
-
-      <!-- DESCRIPTION/CONTENT TEXT-->
-      <div id="desc_content" class="animated fadeIn delay-5">
-        <p id="description-text">Hi, I'm Vivek Vinodh. I'm an engineer by trade, but I'm also much more than that. Use the links to below to learn more. </p>
-      </div>
-
-      <div class="animated fadeIn delay-6">
-        <p id="link-text">
-          <a id="who-I-am-btn" class="link-2 aqua" href="#">who I am</a>,
-          <a id="what-I-like-btn" class="link-2 azure" href="#">what I like</a>,
-          <a id="what-I-do-btn" class="link-2 red" href="#">what I do</a>, and my
-          <a id="portfolio-btn" class="link-2 peach" href="#">portfolio</a>.
-        </p>
-
-        <h5 id="portfolio-text">
-        The portfolio is a work in progress.
-      </h5>
-      </div>
-
-      <!-- CONTACT -->
-      <div class="animated fadeInUp delay-7">
-        <p id="contactme-text">To contact me: <br>
-          <a id="email-text" class="link-2" href="mailto:vivek@vivekvinodh.com">vivek@vivekvinodh.com</a>
-        </p>
-      </div>
-
-      <!-- DISCLAIMER -->
-      <div class="animated fadeInUp delay-7">
-        <h6 id="disclaimer-text">
-          <br>
-        this website is constantly being improved.
-      </h6>
-      </div>
+    <div class="animated fadeIn">
+        <canvas id="canvas-basic"></canvas>
     </div>
-  </div>
-  <!-- SCRIPTS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script src="assets/js/granim.min.js"></script>
-  <script src="assets/js/custom.js"></script>
+    <!-- CONTENT-WRAP -->
+    <div class="content-wrap">
+        <!-- CONTENT -->
+        <div class="content">
+            <!-- TITLE -->
+            <div class="animated fadeInDown delay-2">
+                <h1 id="title-text">
+                    <a href="#">Vivek Vinodh</a>
+                </h1>
+            </div>
+            <!-- SUBTITLE -->
+            <div class="animated fadeIn delay-4">
+                <h2 id="subtitle-text">
+                    currently: exploring new opportunities.
+                </h2>
+            </div>
+
+            <!-- DESCRIPTION/CONTENT TEXT-->
+            <div id="desc-container" class="animated fadeIn delay-5">
+                <div id="desc-content">
+                    <div>
+                        <p>Hi, I'm Vivek Vinodh. I'm an engineer by trade, but I'm also much more than that. Use the links to below to learn more. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="animated fadeIn delay-6">
+                <p id="link-text">
+                    <a id="who-I-am-btn" class="link-2 aqua" href="#">who I am</a>,
+                    <a id="what-I-like-btn" class="link-2 azure" href="#">what I like</a>,
+                    <a id="what-I-do-btn" class="link-2 red" href="#">what I do</a>, and my
+                    <a id="portfolio-btn" class="link-2 peach" href="#">portfolio</a>.
+                </p>
+
+                <h5 id="portfolio-text">
+                    The portfolio is a work in progress.
+                </h5>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="animated fadeInUp delay-7">
+                <p id="contactme-text">To contact me: <br>
+                    <a id="email-text" class="link-2" href="mailto:vivek@vivekvinodh.com">vivek@vivekvinodh.com</a>
+                </p>
+            </div>
+
+            <!-- DISCLAIMER -->
+            <div class="animated fadeInUp delay-7">
+                <h6 id="disclaimer-text">
+                    <br>
+                    this website is constantly being improved.
+                </h6>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/js/granim.min.js"></script>
+    <script src="assets/js/custom.min.js"></script>
 </body>
 
 </html>
