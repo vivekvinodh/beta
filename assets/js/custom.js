@@ -61,6 +61,7 @@ function getCurrentHeight(selector) {
 var $contentMask = $('#desc-container');
 var contentBoxId = '#desc-content';
 var currentHeight = getCurrentHeight(contentBoxId);
+$contentMask.css('height', currentHeight);
 
 $(document).ready(function () {
     // jQuery methods go here...
